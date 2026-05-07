@@ -8,6 +8,6 @@ app.use(express.json());
 app.use(cookieParser());
 dotenv.config();
 
-app.get('/', userRoutes);
+app.use('/', userRoutes);
 
 module.exports = app;
